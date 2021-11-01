@@ -19,7 +19,10 @@ public class Bruch {
     public double toDecimal() {
         // TODO: Die Methode soll den Dezimalwert zum Bruch retournieren
         // Achtung: Ganzzahldivision!
-        return 0;
+        int result = numerator / denominator;
+        result = Math.round(result);
+
+        return result;
     }
 
     public String print() {
